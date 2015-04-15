@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Demo</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+<body style="text-align: center;">
+  <h1>jQuery Demo</h2>
+  <p style="margin: 50px; font-size: 1.3em; padding: 20px; border: 5px dotted white; background-color: black; color: white; line-height: 30px">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. Let's try it out! Follow these instructions to see what it can do:</p>
+  <div class='shape' id='triangle'></div>
+  <div class='shape' id='square'></div>
+  <div class='shape' id='circle'></div>
+  <div class='shape' id='rounded-rectangle'></div>
+  <ol style="text-align: left; margin: 0 50px 0 50px; font-size: 1.1em; line-height: 50px;">
+    <li>
+      Add two <code>script</code> tags at the bottom of this page's body. Connect one to <code>index.js</code> and the other to <code>assets/jquery.min.js</code>.
+    </li> 
+    <li>
+      Reload the page and see what happens!
+    </li> 
+    <li>
+      Go into index.js and use jQuery to select and change the text color on all these list items. Choose whatever color you want!
+    </li>  
+    <li>
+      Set up a jQuery click listener on the triangle -> use the '$(selector)' syntax to target the #triangle id. Then use jQuery's click method and have it execute a function that targets the triangle and makes it fade away using the jquery fadeOut method.
+    </li>    
+    <li>
+      Set up a jQuery mouseenter listener on the square -> use the '$(selector)' syntax to target the #square id. Then use jQuery's mouseenter method and have it execute a function that targets the square and changes its color using the jquery CSS method.
+    </li>  
+    <li>
+      Let's make the circle grow on mouseenter! We'll use the same syntax that you see in sections #1 and #2. But instead of changing the CSS directly, we'll use jQuery's built-in animation method. Into the animate() method, we pass an object that specifies how we want the animation to work. To make the circle 50px taller on mouseenter, we can use 'height' as a key and '+=50px' as the value. We should also expand its width, to keep it a circle, so do the same for the width! 
+    </li>   
+    <li>
+      The circle is growing out of control! Let's make it so that we can shrink by exiting the circle, making it a mouseover effect of growing larger and then smaller when we leave. Use jQuery's mouseleave() method to achieve this.
+    </li>   
+    <li>
+      Lastly, do something crazy with the rectangle! This is your own creation. Look at the jQuery documentation and make something interactive for the user. Make it spin or flip and change 20 colors at once or something exciting when the user clicks on it or touches it.
+    </li>    
+  </ol>
+</body>
+</html>
